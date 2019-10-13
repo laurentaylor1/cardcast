@@ -14,11 +14,13 @@ class Person {
     var image: UIImage
     var name: String
     var bio: String
+    var colour: UIColor
     
-    init(image: UIImage, name: String, bio: String) {
+    init(image: UIImage, name: String, bio: String, colour: UIColor) {
         self.id = UUID()
         self.image = image
         self.name = name
         self.bio = bio
+        self.colour = colour
     }
 }

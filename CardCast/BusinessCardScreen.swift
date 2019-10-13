@@ -38,8 +38,10 @@ class BusinessCardScreen: UIViewController, SFSafariViewControllerDelegate {
         personName.text = person.name
         personImage.image = person.image
         personBio.text = person.bio
+//        summaryBackground.image = UIImage(imageLiteralResourceName: "card-green")
+        summaryBackground.backgroundColor = person.colour
+        summaryBackground.layer.cornerRadius = 20;
         
-        summaryBackground.image = UIImage(imageLiteralResourceName: "card-green")
         personImageBorder.image = UIImage(imageLiteralResourceName: "user-border")
         downloadImage.image = UIImage(imageLiteralResourceName: "download3")
     }

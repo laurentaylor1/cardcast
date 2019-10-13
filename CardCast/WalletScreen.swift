@@ -35,7 +35,7 @@ class WalletScreen: UIViewController, UICollectionViewDataSource, UICollectionVi
         cell.walletNameLabel.text = people[indexPath.row].name
         cell.walletImageView.image = people[indexPath.row].image
         
-        cell.backgroundColor = RandomColorGenerator(withMixedColor: UIColor.red)
+        cell.backgroundColor = people[indexPath.row].colour
         cell.layer.cornerRadius = 10
         cell.layer.masksToBounds = true
         
@@ -46,8 +46,6 @@ class WalletScreen: UIViewController, UICollectionViewDataSource, UICollectionVi
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let personCard:BusinessCardScreen = self.storyboard?.instantiateViewController(withIdentifier: "BusinessCardScreen") as! BusinessCardScreen
         
-        //        personCard.name = people[indexPath.row].name
-        //        personCard.image = people[indexPath.row].image
         personCard.person = people[indexPath.row]
         
         self.navigationController?.pushViewController(personCard, animated: true)

@@ -119,7 +119,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card-green" translatesAutoresizingMaskIntoConstraints="NO" id="ma0-xi-8aT">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ma0-xi-8aT">
                                 <rect key="frame" x="20" y="118" width="374" height="223"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="223" id="gNa-E0-lKa"/>
@@ -388,7 +388,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="card-green" width="1000" height="600"/>
         <image name="download3" width="128" height="128"/>
         <image name="github-icon" width="465" height="457"/>
         <image name="linkedin-icon" width="512" height="512"/>
