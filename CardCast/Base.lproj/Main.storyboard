@@ -126,6 +126,12 @@
                                     <constraint firstAttribute="width" constant="374" id="p2I-QK-q8T"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Biography" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3RT-uW-v59">
+                                <rect key="frame" x="36" y="623" width="187" height="40"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user-border" translatesAutoresizingMaskIntoConstraints="NO" id="SI5-l8-gAd">
                                 <rect key="frame" x="36" y="183" width="90" height="90"/>
                                 <constraints>
@@ -138,13 +144,6 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="H2f-CI-3Af"/>
                                     <constraint firstAttribute="height" constant="80" id="aP6-MH-FXw"/>
-                                </constraints>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download3" translatesAutoresizingMaskIntoConstraints="NO" id="RVE-gg-mEi">
-                                <rect key="frame" x="320" y="287.5" width="45" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="Yso-1r-WOu"/>
-                                    <constraint firstAttribute="width" constant="45" id="hB3-3w-5TU"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="linkedin-icon" translatesAutoresizingMaskIntoConstraints="NO" id="rXq-7g-Bca">
@@ -206,20 +205,38 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Biography" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3RT-uW-v59">
-                                <rect key="frame" x="36" y="623" width="187" height="40"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Raf-dH-wim">
+                                <rect key="frame" x="324" y="287.5" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Ifk-pc-J6g"/>
+                                    <constraint firstAttribute="width" constant="40" id="oS2-eH-bNS"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="download3"/>
+                                <connections>
+                                    <action selector="saveToWalletTappedWithSender:" destination="h5T-wT-dFZ" eventType="touchUpInside" id="c3I-rb-R4v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Kc-yl-3cU">
+                                <rect key="frame" x="324" y="295" width="39" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="Yec-jY-o1K"/>
+                                    <constraint firstAttribute="width" constant="39" id="uDy-IJ-1PQ"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="save-tick-icon"/>
+                                <connections>
+                                    <action selector="removeFromWalletTappedWithSender:" destination="h5T-wT-dFZ" eventType="touchUpInside" id="AKv-YC-AaI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="oKf-lo-i9J" firstAttribute="centerY" secondItem="Rwl-Za-GPu" secondAttribute="centerY" id="29R-33-JEl"/>
                             <constraint firstItem="OUa-jz-CWS" firstAttribute="centerX" secondItem="SI5-l8-gAd" secondAttribute="centerX" id="4Wj-N2-Brx"/>
                             <constraint firstItem="2wp-h6-5fZ" firstAttribute="leading" secondItem="Jxn-zz-8Rs" secondAttribute="leading" constant="36" id="5ss-Hp-YVX"/>
+                            <constraint firstItem="5Kc-yl-3cU" firstAttribute="top" secondItem="gCr-xT-DK4" secondAttribute="bottom" constant="11.5" id="8gp-mU-Gco"/>
                             <constraint firstItem="OUa-jz-CWS" firstAttribute="centerY" secondItem="SI5-l8-gAd" secondAttribute="centerY" id="9U6-NW-zBd"/>
                             <constraint firstItem="3Vt-fG-X2S" firstAttribute="top" secondItem="Jxn-zz-8Rs" secondAttribute="top" constant="295" id="9Xe-qE-fil"/>
+                            <constraint firstItem="Jxn-zz-8Rs" firstAttribute="trailing" secondItem="Raf-dH-wim" secondAttribute="trailing" constant="50" id="9mD-gx-wxU"/>
                             <constraint firstItem="3RT-uW-v59" firstAttribute="top" secondItem="oKf-lo-i9J" secondAttribute="bottom" constant="24" id="AM4-dv-cg3"/>
                             <constraint firstItem="gCr-xT-DK4" firstAttribute="top" secondItem="j8t-P5-9jq" secondAttribute="bottom" constant="7" id="Ek7-Kc-9Cg"/>
                             <constraint firstItem="3Vt-fG-X2S" firstAttribute="centerX" secondItem="Jxn-zz-8Rs" secondAttribute="centerX" id="Frx-4c-C4n"/>
@@ -234,6 +251,7 @@
                             <constraint firstItem="2wp-h6-5fZ" firstAttribute="top" secondItem="3RT-uW-v59" secondAttribute="bottom" constant="12" id="ScD-Xf-9RY"/>
                             <constraint firstItem="j8t-P5-9jq" firstAttribute="leading" secondItem="SI5-l8-gAd" secondAttribute="trailing" constant="14" id="UJ6-s0-Q67"/>
                             <constraint firstItem="rXq-7g-Bca" firstAttribute="centerY" secondItem="3Vt-fG-X2S" secondAttribute="centerY" id="V9f-lq-KEM"/>
+                            <constraint firstItem="Jxn-zz-8Rs" firstAttribute="trailing" secondItem="5Kc-yl-3cU" secondAttribute="trailing" constant="51" id="YbP-A1-RVz"/>
                             <constraint firstItem="ma0-xi-8aT" firstAttribute="top" secondItem="j8t-P5-9jq" secondAttribute="bottom" constant="-77" id="aOq-VY-ULK"/>
                             <constraint firstItem="DBv-OE-Qya" firstAttribute="centerY" secondItem="3Vt-fG-X2S" secondAttribute="centerY" id="aS4-6S-tYS"/>
                             <constraint firstItem="Rwl-Za-GPu" firstAttribute="centerX" secondItem="3Vt-fG-X2S" secondAttribute="centerX" id="dhh-nL-Y6N"/>
@@ -241,22 +259,22 @@
                             <constraint firstItem="Jxn-zz-8Rs" firstAttribute="trailing" secondItem="3RT-uW-v59" secondAttribute="trailing" constant="191" id="iWb-ty-U8L"/>
                             <constraint firstItem="ma0-xi-8aT" firstAttribute="centerX" secondItem="Jxn-zz-8Rs" secondAttribute="centerX" id="jXP-Jc-hi3"/>
                             <constraint firstItem="3su-Ka-lSf" firstAttribute="leading" secondItem="Rwl-Za-GPu" secondAttribute="trailing" constant="16" id="luk-GT-6GP"/>
-                            <constraint firstItem="RVE-gg-mEi" firstAttribute="top" secondItem="gCr-xT-DK4" secondAttribute="bottom" constant="4" id="mjc-pd-q9f"/>
                             <constraint firstItem="Rwl-Za-GPu" firstAttribute="leading" secondItem="oKf-lo-i9J" secondAttribute="trailing" constant="16" id="nk4-n7-oIJ"/>
                             <constraint firstItem="3RT-uW-v59" firstAttribute="leading" secondItem="Jxn-zz-8Rs" secondAttribute="leading" constant="36" id="ocT-K1-PNL"/>
-                            <constraint firstItem="Jxn-zz-8Rs" firstAttribute="trailing" secondItem="RVE-gg-mEi" secondAttribute="trailing" constant="49" id="t2w-t1-iQE"/>
                             <constraint firstItem="SI5-l8-gAd" firstAttribute="top" secondItem="Jxn-zz-8Rs" secondAttribute="top" constant="95" id="tXa-Mk-5a6"/>
                             <constraint firstItem="Jxn-zz-8Rs" firstAttribute="trailing" secondItem="2wp-h6-5fZ" secondAttribute="trailing" constant="36" id="uaS-su-LmD"/>
                             <constraint firstItem="Jxn-zz-8Rs" firstAttribute="trailing" secondItem="j8t-P5-9jq" secondAttribute="trailing" constant="49" id="wn7-tX-Zf3"/>
+                            <constraint firstItem="Raf-dH-wim" firstAttribute="top" secondItem="gCr-xT-DK4" secondAttribute="bottom" constant="4" id="z9b-3D-q8R"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Jxn-zz-8Rs"/>
                     </view>
                     <connections>
-                        <outlet property="downloadImage" destination="RVE-gg-mEi" id="opt-kk-A6x"/>
                         <outlet property="personBio" destination="gCr-xT-DK4" id="zE5-MS-Pxh"/>
                         <outlet property="personImage" destination="OUa-jz-CWS" id="Fm8-A9-Gg2"/>
                         <outlet property="personImageBorder" destination="SI5-l8-gAd" id="nrA-Pw-QzJ"/>
                         <outlet property="personName" destination="j8t-P5-9jq" id="UWU-SB-7NW"/>
+                        <outlet property="removeFromWalletButton" destination="5Kc-yl-3cU" id="ck0-eG-2df"/>
+                        <outlet property="saveToWalletButton" destination="Raf-dH-wim" id="eW3-Xz-xhF"/>
                         <outlet property="summaryBackground" destination="ma0-xi-8aT" id="TEj-DO-DS8"/>
                     </connections>
                 </viewController>
@@ -394,6 +412,7 @@
         <image name="man" width="512" height="512"/>
         <image name="medium-icon" width="980" height="980"/>
         <image name="outlook-icon" width="512" height="512"/>
+        <image name="save-tick-icon" width="980" height="900"/>
         <image name="slack-icon" width="406" height="407"/>
         <image name="twitter-icon" width="400" height="400"/>
         <image name="user-border" width="528" height="528"/>

@@ -16,7 +16,8 @@ class BusinessCardScreen: UIViewController, SFSafariViewControllerDelegate {
     
     @IBOutlet weak var personImageBorder: UIImageView!
     @IBOutlet weak var summaryBackground: UIImageView!
-    @IBOutlet weak var downloadImage: UIImageView!
+    @IBOutlet weak var saveToWalletButton: UIButton!
+    @IBOutlet weak var removeFromWalletButton: UIButton!
     
     var person: Person?
     
@@ -28,6 +29,7 @@ class BusinessCardScreen: UIViewController, SFSafariViewControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupBusinessCardData()
+        setButtons()
     }
     
     private func setupBusinessCardData() {
@@ -38,15 +40,28 @@ class BusinessCardScreen: UIViewController, SFSafariViewControllerDelegate {
         personName.text = person.name
         personImage.image = person.image
         personBio.text = person.bio
-//        summaryBackground.image = UIImage(imageLiteralResourceName: "card-green")
         summaryBackground.backgroundColor = person.colour
-        summaryBackground.layer.cornerRadius = 20;
         
+        summaryBackground.layer.cornerRadius = 20;
         personImageBorder.image = UIImage(imageLiteralResourceName: "user-border")
-        downloadImage.image = UIImage(imageLiteralResourceName: "download3")
     }
     
-    private func savePersonToWallet() {
-        
+    func setButtons()
+    {
+        saveToWalletButton.setImage(UIImage(imageLiteralResourceName: "download3"), for: .normal)
+        removeFromWalletButton.setImage(UIImage(imageLiteralResourceName: "save-tick-icon"), for: .normal)
+        removeFromWalletButton.isHidden = true
+    }
+    
+    @IBAction func saveToWalletTapped(sender: AnyObject)
+    {
+        saveToWalletButton.isHidden = true
+        removeFromWalletButton.isHidden = false
+    }
+    
+    @IBAction func removeFromWalletTapped(sender: AnyObject)
+    {
+        saveToWalletButton.isHidden = false
+        removeFromWalletButton.isHidden = true
     }
 }

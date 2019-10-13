@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		841569532353730A00C1B0BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841569522353730A00C1B0BE /* Assets.xcassets */; };
+		84A5CBA62353CBF500613C2F /* CardCast.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84A5CBA42353CBF500613C2F /* CardCast.xcdatamodeld */; };
 		84BAED8C23522672009C46E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BAED8B23522672009C46E6 /* AppDelegate.swift */; };
 		84BAED8E23522672009C46E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BAED8D23522672009C46E6 /* ViewController.swift */; };
 		84BAED9123522672009C46E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BAED8F23522672009C46E6 /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		841569522353730A00C1B0BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84A5CBA52353CBF500613C2F /* CardCast.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CardCast.xcdatamodel; sourceTree = "<group>"; };
 		84BAED8823522671009C46E6 /* CardCast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardCast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84BAED8B23522672009C46E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84BAED8D23522672009C46E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				84BAEDC323522F57009C46E6 /* PersonDatabase.swift */,
 				84BAED8B23522672009C46E6 /* AppDelegate.swift */,
 				84BAED9723522673009C46E6 /* Info.plist */,
+				84A5CBA42353CBF500613C2F /* CardCast.xcdatamodeld */,
 			);
 			path = CardCast;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84BAEDBE23522DF6009C46E6 /* Person.swift in Sources */,
+				84A5CBA62353CBF500613C2F /* CardCast.xcdatamodeld in Sources */,
 				84BAEDBC23522DD6009C46E6 /* WalletCell.swift in Sources */,
 				84BAEDC823523166009C46E6 /* NearbyCell.swift in Sources */,
 				84BAEDC023522E5B009C46E6 /* RandomColourGenerator.swift in Sources */,
@@ -612,6 +616,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		84A5CBA42353CBF500613C2F /* CardCast.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				84A5CBA52353CBF500613C2F /* CardCast.xcdatamodel */,
+			);
+			currentVersion = 84A5CBA52353CBF500613C2F /* CardCast.xcdatamodel */;
+			path = CardCast.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 84BAED8023522671009C46E6 /* Project object */;
 }
