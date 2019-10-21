@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		841569532353730A00C1B0BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841569522353730A00C1B0BE /* Assets.xcassets */; };
 		84A5CBA62353CBF500613C2F /* CardCast.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84A5CBA42353CBF500613C2F /* CardCast.xcdatamodeld */; };
+		84A5CBB42353E7D800613C2F /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A5CBB32353E7D800613C2F /* PersistenceService.swift */; };
+		84A5CBB72353F52A00613C2F /* SavedBusinessCard+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A5CBB52353F52A00613C2F /* SavedBusinessCard+CoreDataClass.swift */; };
+		84A5CBB82353F52A00613C2F /* SavedBusinessCard+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A5CBB62353F52A00613C2F /* SavedBusinessCard+CoreDataProperties.swift */; };
+		84A5CBBA235E6A7C00613C2F /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A5CBB9235E6A7C00613C2F /* Wallet.swift */; };
 		84BAED8C23522672009C46E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BAED8B23522672009C46E6 /* AppDelegate.swift */; };
 		84BAED8E23522672009C46E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BAED8D23522672009C46E6 /* ViewController.swift */; };
 		84BAED9123522672009C46E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BAED8F23522672009C46E6 /* Main.storyboard */; };
@@ -45,6 +49,10 @@
 /* Begin PBXFileReference section */
 		841569522353730A00C1B0BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84A5CBA52353CBF500613C2F /* CardCast.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CardCast.xcdatamodel; sourceTree = "<group>"; };
+		84A5CBB32353E7D800613C2F /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
+		84A5CBB52353F52A00613C2F /* SavedBusinessCard+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "SavedBusinessCard+CoreDataClass.swift"; path = "../SavedBusinessCard+CoreDataClass.swift"; sourceTree = "<group>"; };
+		84A5CBB62353F52A00613C2F /* SavedBusinessCard+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "SavedBusinessCard+CoreDataProperties.swift"; path = "../SavedBusinessCard+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		84A5CBB9235E6A7C00613C2F /* Wallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
 		84BAED8823522671009C46E6 /* CardCast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardCast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84BAED8B23522672009C46E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84BAED8D23522672009C46E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +123,8 @@
 		84BAED8A23522671009C46E6 /* CardCast */ = {
 			isa = PBXGroup;
 			children = (
+				84A5CBB52353F52A00613C2F /* SavedBusinessCard+CoreDataClass.swift */,
+				84A5CBB62353F52A00613C2F /* SavedBusinessCard+CoreDataProperties.swift */,
 				84BAED8F23522672009C46E6 /* Main.storyboard */,
 				84BAEDB923522D99009C46E6 /* WalletScreen.swift */,
 				84BAEDBB23522DD6009C46E6 /* WalletCell.swift */,
@@ -127,7 +137,9 @@
 				84BAED8D23522672009C46E6 /* ViewController.swift */,
 				84BAED9423522673009C46E6 /* LaunchScreen.storyboard */,
 				84BAEDC323522F57009C46E6 /* PersonDatabase.swift */,
+				84A5CBB9235E6A7C00613C2F /* Wallet.swift */,
 				84BAED8B23522672009C46E6 /* AppDelegate.swift */,
+				84A5CBB32353E7D800613C2F /* PersistenceService.swift */,
 				84BAED9723522673009C46E6 /* Info.plist */,
 				84A5CBA42353CBF500613C2F /* CardCast.xcdatamodeld */,
 			);
@@ -283,17 +295,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A5CBBA235E6A7C00613C2F /* Wallet.swift in Sources */,
 				84BAEDBE23522DF6009C46E6 /* Person.swift in Sources */,
 				84A5CBA62353CBF500613C2F /* CardCast.xcdatamodeld in Sources */,
 				84BAEDBC23522DD6009C46E6 /* WalletCell.swift in Sources */,
 				84BAEDC823523166009C46E6 /* NearbyCell.swift in Sources */,
 				84BAEDC023522E5B009C46E6 /* RandomColourGenerator.swift in Sources */,
 				84BAEDC423522F57009C46E6 /* PersonDatabase.swift in Sources */,
+				84A5CBB42353E7D800613C2F /* PersistenceService.swift in Sources */,
 				84BAEDBA23522D99009C46E6 /* WalletScreen.swift in Sources */,
 				84BAEDC223522ED5009C46E6 /* BusinessCardScreen.swift in Sources */,
 				84BAED8E23522672009C46E6 /* ViewController.swift in Sources */,
 				84BAEDC623523132009C46E6 /* NearbyScreen.swift in Sources */,
+				84A5CBB72353F52A00613C2F /* SavedBusinessCard+CoreDataClass.swift in Sources */,
 				84BAED8C23522672009C46E6 /* AppDelegate.swift in Sources */,
+				84A5CBB82353F52A00613C2F /* SavedBusinessCard+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

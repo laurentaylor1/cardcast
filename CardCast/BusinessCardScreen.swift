@@ -7,6 +7,7 @@
 //
 
 import SafariServices
+import CoreData
 
 class BusinessCardScreen: UIViewController, SFSafariViewControllerDelegate {
     
@@ -57,6 +58,27 @@ class BusinessCardScreen: UIViewController, SFSafariViewControllerDelegate {
     {
         saveToWalletButton.isHidden = true
         removeFromWalletButton.isHidden = false
+        
+        let alert = UIAlertController(title: "Business card added to wallet", message: nil, preferredStyle: .alert)
+        
+        let action = UIAlertAction(title: "Ok", style: .default) { (_) in
+            guard let person = self.person else {
+                return
+            }
+            print(person.name)
+            
+            let newBusinessCard = SavedBusinessCard(context: PersistenceService.context)
+            newBusinessCard.id = UUID()
+            newBusinessCard.name = self.person?.name
+            newBusinessCard.bio = self.person?.bio
+
+            let data = (self.person?.image)!.pngData()
+            newBusinessCard.image = data as NSData?
+            newBusinessCard.colour = self.person?.colour
+            PersistenceService.saveContext()
+        }
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
     }
     
     @IBAction func removeFromWalletTapped(sender: AnyObject)
