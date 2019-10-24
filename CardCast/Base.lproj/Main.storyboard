@@ -153,13 +153,6 @@
                                     <constraint firstAttribute="height" constant="100" id="wol-N9-5pv"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twitter-icon" translatesAutoresizingMaskIntoConstraints="NO" id="DBv-OE-Qya">
-                                <rect key="frame" x="273" y="383" width="100" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="3F9-KP-beT"/>
-                                    <constraint firstAttribute="width" constant="100" id="iLO-Yt-rBp"/>
-                                </constraints>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="medium-icon" translatesAutoresizingMaskIntoConstraints="NO" id="3Vt-fG-X2S">
                                 <rect key="frame" x="157" y="383" width="100" height="100"/>
                                 <constraints>
@@ -227,6 +220,14 @@
                                     <action selector="removeFromWalletTappedWithSender:" destination="h5T-wT-dFZ" eventType="touchUpInside" id="AKv-YC-AaI"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ibk-sr-thG">
+                                <rect key="frame" x="273" y="383" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="twitter-icon"/>
+                                <connections>
+                                    <action selector="twitterTapped:" destination="h5T-wT-dFZ" eventType="touchUpInside" id="KUg-xJ-sXz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -244,7 +245,6 @@
                             <constraint firstItem="gCr-xT-DK4" firstAttribute="leading" secondItem="j8t-P5-9jq" secondAttribute="leading" id="Gym-xx-A5w"/>
                             <constraint firstItem="SI5-l8-gAd" firstAttribute="leading" secondItem="Jxn-zz-8Rs" secondAttribute="leading" constant="36" id="HqJ-T9-oNK"/>
                             <constraint firstItem="ma0-xi-8aT" firstAttribute="top" secondItem="Jxn-zz-8Rs" secondAttribute="top" constant="30" id="HyA-uP-cPK"/>
-                            <constraint firstItem="DBv-OE-Qya" firstAttribute="leading" secondItem="3Vt-fG-X2S" secondAttribute="trailing" constant="16" id="M3W-eM-dC7"/>
                             <constraint firstItem="3su-Ka-lSf" firstAttribute="centerY" secondItem="Rwl-Za-GPu" secondAttribute="centerY" id="MgF-L6-y7A"/>
                             <constraint firstItem="Rwl-Za-GPu" firstAttribute="top" secondItem="3Vt-fG-X2S" secondAttribute="bottom" constant="16" id="Nxe-c4-BAJ"/>
                             <constraint firstItem="Jxn-zz-8Rs" firstAttribute="trailing" secondItem="gCr-xT-DK4" secondAttribute="trailing" constant="49" id="Rrx-EQ-FkE"/>
@@ -253,7 +253,6 @@
                             <constraint firstItem="rXq-7g-Bca" firstAttribute="centerY" secondItem="3Vt-fG-X2S" secondAttribute="centerY" id="V9f-lq-KEM"/>
                             <constraint firstItem="Jxn-zz-8Rs" firstAttribute="trailing" secondItem="5Kc-yl-3cU" secondAttribute="trailing" constant="51" id="YbP-A1-RVz"/>
                             <constraint firstItem="ma0-xi-8aT" firstAttribute="top" secondItem="j8t-P5-9jq" secondAttribute="bottom" constant="-77" id="aOq-VY-ULK"/>
-                            <constraint firstItem="DBv-OE-Qya" firstAttribute="centerY" secondItem="3Vt-fG-X2S" secondAttribute="centerY" id="aS4-6S-tYS"/>
                             <constraint firstItem="Rwl-Za-GPu" firstAttribute="centerX" secondItem="3Vt-fG-X2S" secondAttribute="centerX" id="dhh-nL-Y6N"/>
                             <constraint firstItem="3Vt-fG-X2S" firstAttribute="leading" secondItem="rXq-7g-Bca" secondAttribute="trailing" constant="16" id="dpn-PT-wnb"/>
                             <constraint firstItem="Jxn-zz-8Rs" firstAttribute="trailing" secondItem="3RT-uW-v59" secondAttribute="trailing" constant="191" id="iWb-ty-U8L"/>

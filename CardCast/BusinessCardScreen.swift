@@ -86,4 +86,21 @@ class BusinessCardScreen: UIViewController, SFSafariViewControllerDelegate {
         saveToWalletButton.isHidden = false
         removeFromWalletButton.isHidden = true
     }
+    
+    @IBAction func twitterTapped(_ sender: Any) {
+//        guard let url = URL(string: "https://twitter.com/elonmusk") else { return }
+//        UIApplication.shared.open(url)
+        
+        let screenName =  "elonmusk"
+        let appURL = NSURL(string: "twitter://user?screen_name=\(screenName)")!
+        let webURL = NSURL(string: "https://twitter.com/\(screenName)")!
+        
+        let application = UIApplication.shared
+        
+        if application.canOpenURL(appURL as URL) {
+            application.open(appURL as URL)
+        } else {
+            application.open(webURL as URL)
+        }
+    }
 }
