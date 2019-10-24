@@ -146,41 +146,6 @@
                                     <constraint firstAttribute="height" constant="80" id="aP6-MH-FXw"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="linkedin-icon" translatesAutoresizingMaskIntoConstraints="NO" id="rXq-7g-Bca">
-                                <rect key="frame" x="41" y="383" width="100" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="NTA-4x-k10"/>
-                                    <constraint firstAttribute="height" constant="100" id="wol-N9-5pv"/>
-                                </constraints>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="medium-icon" translatesAutoresizingMaskIntoConstraints="NO" id="3Vt-fG-X2S">
-                                <rect key="frame" x="157" y="383" width="100" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="9hW-Dw-eep"/>
-                                    <constraint firstAttribute="width" constant="100" id="JAj-2F-HqC"/>
-                                </constraints>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="github-icon" translatesAutoresizingMaskIntoConstraints="NO" id="oKf-lo-i9J">
-                                <rect key="frame" x="41" y="499" width="100" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="CTR-hl-Jt7"/>
-                                    <constraint firstAttribute="width" constant="100" id="LoU-lM-CbJ"/>
-                                </constraints>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="outlook-icon" translatesAutoresizingMaskIntoConstraints="NO" id="3su-Ka-lSf">
-                                <rect key="frame" x="273" y="499" width="100" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="3Ww-nM-y4N"/>
-                                    <constraint firstAttribute="width" constant="100" id="74y-L7-v2R"/>
-                                </constraints>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slack-icon" translatesAutoresizingMaskIntoConstraints="NO" id="Rwl-Za-GPu">
-                                <rect key="frame" x="157" y="499" width="100" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="dlu-qg-ubF"/>
-                                    <constraint firstAttribute="height" constant="100" id="f45-rv-zCf"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lauren Taylor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j8t-P5-9jq">
                                 <rect key="frame" x="140" y="155" width="225" height="40"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
@@ -192,7 +157,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="16" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2wp-h6-5fZ">
-                                <rect key="frame" x="36" y="675" width="342" height="143.5"/>
+                                <rect key="frame" x="36" y="675" width="342" height="144"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="144" id="JQH-oL-ZRt"/>
+                                </constraints>
                                 <string key="text">Software Engineer working at Google Dublin. Big dog lover. Probably debugging something. Software Engineer working at Google Dublin. Big dog lover. Probably debugging something.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
@@ -220,49 +188,101 @@
                                     <action selector="removeFromWalletTappedWithSender:" destination="h5T-wT-dFZ" eventType="touchUpInside" id="AKv-YC-AaI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ibk-sr-thG">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ibk-sr-thG">
                                 <rect key="frame" x="273" y="383" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="twitter-icon"/>
+                                <state key="normal" title="Twitter" image="twitter-icon"/>
                                 <connections>
                                     <action selector="twitterTapped:" destination="h5T-wT-dFZ" eventType="touchUpInside" id="KUg-xJ-sXz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tHp-wg-ZkG">
+                                <rect key="frame" x="273" y="499" width="100" height="100"/>
+                                <state key="normal" title="Outlook" image="outlook-icon"/>
+                                <connections>
+                                    <action selector="outlookTapped:" destination="h5T-wT-dFZ" eventType="touchUpInside" id="IAy-5r-a2G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWC-HO-BIg">
+                                <rect key="frame" x="41" y="383" width="100" height="100"/>
+                                <state key="normal" title="LinkedIn" image="linkedin-icon"/>
+                                <connections>
+                                    <action selector="linkedinTapped:" destination="h5T-wT-dFZ" eventType="touchUpInside" id="aMh-cS-CB5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5cl-l2-pS8">
+                                <rect key="frame" x="41" y="499" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="6zy-Hf-tGY"/>
+                                    <constraint firstAttribute="width" constant="100" id="X6C-W1-ney"/>
+                                </constraints>
+                                <state key="normal" title="Github" image="github-icon"/>
+                                <connections>
+                                    <action selector="githubTapped:" destination="h5T-wT-dFZ" eventType="touchUpInside" id="vhy-PS-5vZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjB-DL-Zf9">
+                                <rect key="frame" x="157" y="383" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="fHc-qj-FyO"/>
+                                </constraints>
+                                <state key="normal" title="Medium" image="medium-icon"/>
+                                <connections>
+                                    <action selector="mediumTapped:" destination="h5T-wT-dFZ" eventType="touchUpInside" id="lwG-aG-MSM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yo9-nS-pa5">
+                                <rect key="frame" x="157" y="499" width="100" height="100"/>
+                                <state key="normal" title="Slack" image="whatsapp-icon"/>
+                                <connections>
+                                    <action selector="whatsappTapped:" destination="h5T-wT-dFZ" eventType="touchUpInside" id="KRu-ac-qrU"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="oKf-lo-i9J" firstAttribute="centerY" secondItem="Rwl-Za-GPu" secondAttribute="centerY" id="29R-33-JEl"/>
+                            <constraint firstItem="bjB-DL-Zf9" firstAttribute="bottom" secondItem="aWC-HO-BIg" secondAttribute="bottom" id="093-1m-IEG"/>
+                            <constraint firstItem="5cl-l2-pS8" firstAttribute="top" secondItem="tHp-wg-ZkG" secondAttribute="top" id="48c-x2-sb1"/>
                             <constraint firstItem="OUa-jz-CWS" firstAttribute="centerX" secondItem="SI5-l8-gAd" secondAttribute="centerX" id="4Wj-N2-Brx"/>
+                            <constraint firstItem="2wp-h6-5fZ" firstAttribute="centerX" secondItem="bjB-DL-Zf9" secondAttribute="centerX" id="5sD-YD-mVy"/>
                             <constraint firstItem="2wp-h6-5fZ" firstAttribute="leading" secondItem="Jxn-zz-8Rs" secondAttribute="leading" constant="36" id="5ss-Hp-YVX"/>
+                            <constraint firstItem="5cl-l2-pS8" firstAttribute="bottom" secondItem="tHp-wg-ZkG" secondAttribute="bottom" id="73Q-m9-VbJ"/>
                             <constraint firstItem="5Kc-yl-3cU" firstAttribute="top" secondItem="gCr-xT-DK4" secondAttribute="bottom" constant="11.5" id="8gp-mU-Gco"/>
                             <constraint firstItem="OUa-jz-CWS" firstAttribute="centerY" secondItem="SI5-l8-gAd" secondAttribute="centerY" id="9U6-NW-zBd"/>
-                            <constraint firstItem="3Vt-fG-X2S" firstAttribute="top" secondItem="Jxn-zz-8Rs" secondAttribute="top" constant="295" id="9Xe-qE-fil"/>
                             <constraint firstItem="Jxn-zz-8Rs" firstAttribute="trailing" secondItem="Raf-dH-wim" secondAttribute="trailing" constant="50" id="9mD-gx-wxU"/>
-                            <constraint firstItem="3RT-uW-v59" firstAttribute="top" secondItem="oKf-lo-i9J" secondAttribute="bottom" constant="24" id="AM4-dv-cg3"/>
+                            <constraint firstItem="bjB-DL-Zf9" firstAttribute="top" secondItem="Ibk-sr-thG" secondAttribute="top" id="CWg-gP-Rdh"/>
                             <constraint firstItem="gCr-xT-DK4" firstAttribute="top" secondItem="j8t-P5-9jq" secondAttribute="bottom" constant="7" id="Ek7-Kc-9Cg"/>
-                            <constraint firstItem="3Vt-fG-X2S" firstAttribute="centerX" secondItem="Jxn-zz-8Rs" secondAttribute="centerX" id="Frx-4c-C4n"/>
                             <constraint firstItem="gCr-xT-DK4" firstAttribute="trailing" secondItem="j8t-P5-9jq" secondAttribute="trailing" id="FzB-i2-Ewn"/>
+                            <constraint firstItem="tHp-wg-ZkG" firstAttribute="leading" secondItem="Ibk-sr-thG" secondAttribute="leading" id="GdN-ff-ImP"/>
                             <constraint firstItem="gCr-xT-DK4" firstAttribute="leading" secondItem="j8t-P5-9jq" secondAttribute="leading" id="Gym-xx-A5w"/>
                             <constraint firstItem="SI5-l8-gAd" firstAttribute="leading" secondItem="Jxn-zz-8Rs" secondAttribute="leading" constant="36" id="HqJ-T9-oNK"/>
                             <constraint firstItem="ma0-xi-8aT" firstAttribute="top" secondItem="Jxn-zz-8Rs" secondAttribute="top" constant="30" id="HyA-uP-cPK"/>
-                            <constraint firstItem="3su-Ka-lSf" firstAttribute="centerY" secondItem="Rwl-Za-GPu" secondAttribute="centerY" id="MgF-L6-y7A"/>
-                            <constraint firstItem="Rwl-Za-GPu" firstAttribute="top" secondItem="3Vt-fG-X2S" secondAttribute="bottom" constant="16" id="Nxe-c4-BAJ"/>
+                            <constraint firstItem="Yo9-nS-pa5" firstAttribute="leading" secondItem="5cl-l2-pS8" secondAttribute="trailing" constant="16" id="L3M-5F-aep"/>
+                            <constraint firstItem="3RT-uW-v59" firstAttribute="top" secondItem="5cl-l2-pS8" secondAttribute="bottom" constant="24" id="N9X-Yi-te3"/>
                             <constraint firstItem="Jxn-zz-8Rs" firstAttribute="trailing" secondItem="gCr-xT-DK4" secondAttribute="trailing" constant="49" id="Rrx-EQ-FkE"/>
                             <constraint firstItem="2wp-h6-5fZ" firstAttribute="top" secondItem="3RT-uW-v59" secondAttribute="bottom" constant="12" id="ScD-Xf-9RY"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="2wp-h6-5fZ" secondAttribute="bottom" constant="-6" id="T1J-N1-lzs"/>
                             <constraint firstItem="j8t-P5-9jq" firstAttribute="leading" secondItem="SI5-l8-gAd" secondAttribute="trailing" constant="14" id="UJ6-s0-Q67"/>
-                            <constraint firstItem="rXq-7g-Bca" firstAttribute="centerY" secondItem="3Vt-fG-X2S" secondAttribute="centerY" id="V9f-lq-KEM"/>
+                            <constraint firstItem="bjB-DL-Zf9" firstAttribute="bottom" secondItem="Ibk-sr-thG" secondAttribute="bottom" id="Wt4-m1-xN4"/>
+                            <constraint firstItem="5cl-l2-pS8" firstAttribute="top" secondItem="aWC-HO-BIg" secondAttribute="bottom" constant="16" id="Xzu-EC-dO1"/>
+                            <constraint firstItem="5cl-l2-pS8" firstAttribute="leading" secondItem="aWC-HO-BIg" secondAttribute="leading" id="YKJ-Dq-LMJ"/>
                             <constraint firstItem="Jxn-zz-8Rs" firstAttribute="trailing" secondItem="5Kc-yl-3cU" secondAttribute="trailing" constant="51" id="YbP-A1-RVz"/>
                             <constraint firstItem="ma0-xi-8aT" firstAttribute="top" secondItem="j8t-P5-9jq" secondAttribute="bottom" constant="-77" id="aOq-VY-ULK"/>
-                            <constraint firstItem="Rwl-Za-GPu" firstAttribute="centerX" secondItem="3Vt-fG-X2S" secondAttribute="centerX" id="dhh-nL-Y6N"/>
-                            <constraint firstItem="3Vt-fG-X2S" firstAttribute="leading" secondItem="rXq-7g-Bca" secondAttribute="trailing" constant="16" id="dpn-PT-wnb"/>
+                            <constraint firstItem="5cl-l2-pS8" firstAttribute="leading" secondItem="OUa-jz-CWS" secondAttribute="leading" id="bA3-aL-zPn"/>
+                            <constraint firstItem="Ibk-sr-thG" firstAttribute="leading" secondItem="bjB-DL-Zf9" secondAttribute="trailing" constant="16" id="bdu-52-AId"/>
+                            <constraint firstItem="2wp-h6-5fZ" firstAttribute="centerX" secondItem="Yo9-nS-pa5" secondAttribute="centerX" id="bmL-un-nZ5"/>
+                            <constraint firstItem="bjB-DL-Zf9" firstAttribute="top" secondItem="aWC-HO-BIg" secondAttribute="top" id="eSl-hP-ni1"/>
                             <constraint firstItem="Jxn-zz-8Rs" firstAttribute="trailing" secondItem="3RT-uW-v59" secondAttribute="trailing" constant="191" id="iWb-ty-U8L"/>
                             <constraint firstItem="ma0-xi-8aT" firstAttribute="centerX" secondItem="Jxn-zz-8Rs" secondAttribute="centerX" id="jXP-Jc-hi3"/>
-                            <constraint firstItem="3su-Ka-lSf" firstAttribute="leading" secondItem="Rwl-Za-GPu" secondAttribute="trailing" constant="16" id="luk-GT-6GP"/>
-                            <constraint firstItem="Rwl-Za-GPu" firstAttribute="leading" secondItem="oKf-lo-i9J" secondAttribute="trailing" constant="16" id="nk4-n7-oIJ"/>
+                            <constraint firstItem="Jxn-zz-8Rs" firstAttribute="trailing" secondItem="tHp-wg-ZkG" secondAttribute="trailing" constant="41" id="jo5-Wb-Wrq"/>
+                            <constraint firstItem="5cl-l2-pS8" firstAttribute="trailing" secondItem="aWC-HO-BIg" secondAttribute="trailing" id="lcl-cl-tYY"/>
                             <constraint firstItem="3RT-uW-v59" firstAttribute="leading" secondItem="Jxn-zz-8Rs" secondAttribute="leading" constant="36" id="ocT-K1-PNL"/>
+                            <constraint firstItem="bjB-DL-Zf9" firstAttribute="leading" secondItem="Yo9-nS-pa5" secondAttribute="leading" id="ov5-Pw-eRz"/>
                             <constraint firstItem="SI5-l8-gAd" firstAttribute="top" secondItem="Jxn-zz-8Rs" secondAttribute="top" constant="95" id="tXa-Mk-5a6"/>
                             <constraint firstItem="Jxn-zz-8Rs" firstAttribute="trailing" secondItem="2wp-h6-5fZ" secondAttribute="trailing" constant="36" id="uaS-su-LmD"/>
+                            <constraint firstItem="tHp-wg-ZkG" firstAttribute="trailing" secondItem="Ibk-sr-thG" secondAttribute="trailing" id="wL5-kK-UM6"/>
                             <constraint firstItem="Jxn-zz-8Rs" firstAttribute="trailing" secondItem="j8t-P5-9jq" secondAttribute="trailing" constant="49" id="wn7-tX-Zf3"/>
+                            <constraint firstItem="5cl-l2-pS8" firstAttribute="bottom" secondItem="Yo9-nS-pa5" secondAttribute="bottom" id="ybN-TP-n8U"/>
+                            <constraint firstItem="5cl-l2-pS8" firstAttribute="top" secondItem="Yo9-nS-pa5" secondAttribute="top" id="ye5-0A-ZyK"/>
                             <constraint firstItem="Raf-dH-wim" firstAttribute="top" secondItem="gCr-xT-DK4" secondAttribute="bottom" constant="4" id="z9b-3D-q8R"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Jxn-zz-8Rs"/>
@@ -412,8 +432,8 @@
         <image name="medium-icon" width="980" height="980"/>
         <image name="outlook-icon" width="512" height="512"/>
         <image name="save-tick-icon" width="980" height="900"/>
-        <image name="slack-icon" width="406" height="407"/>
         <image name="twitter-icon" width="400" height="400"/>
         <image name="user-border" width="528" height="528"/>
+        <image name="whatsapp-icon" width="512" height="512"/>
     </resources>
 </document>

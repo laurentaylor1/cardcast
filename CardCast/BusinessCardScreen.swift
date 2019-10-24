@@ -88,9 +88,6 @@ class BusinessCardScreen: UIViewController, SFSafariViewControllerDelegate {
     }
     
     @IBAction func twitterTapped(_ sender: Any) {
-//        guard let url = URL(string: "https://twitter.com/elonmusk") else { return }
-//        UIApplication.shared.open(url)
-        
         let screenName =  "elonmusk"
         let appURL = NSURL(string: "twitter://user?screen_name=\(screenName)")!
         let webURL = NSURL(string: "https://twitter.com/\(screenName)")!
@@ -102,5 +99,59 @@ class BusinessCardScreen: UIViewController, SFSafariViewControllerDelegate {
         } else {
             application.open(webURL as URL)
         }
+    }
+    
+    @IBAction func outlookTapped(_ sender: Any) {
+        let email = "laurentaylor1@outlook.com"
+        if let url = URL(string: "mailto:\(email)") {
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(url)
+            } else {
+                UIApplication.shared.openURL(url)
+            }
+        }
+    }
+
+    @IBAction func linkedinTapped(_ sender: Any) {
+        guard let url = URL(string: "https://www.linkedin.com/in/lauren-taylor-48a15013b/") else { return }
+        UIApplication.shared.open(url)
+    }
+    
+   
+    @IBAction func githubTapped(_ sender: Any) {
+        guard let url = URL(string: "https://github.com/laurentaylor1?tab=repositories") else { return }
+        UIApplication.shared.open(url)
+    }
+    
+    @IBAction func mediumTapped(_ sender: Any) {
+        guard let url = URL(string: "https://medium.com/@laurentaylor1") else { return }
+        UIApplication.shared.open(url)
+    }
+    
+    @IBAction func whatsappTapped(_ sender: Any) {
+        
+//        let alert = UIAlertController(title: "Do you wish to call 07951600152?", message: nil, preferredStyle: .alert)
+        
+        let alert = UIAlertController(title: "Call", message: "Do you wish to call 07951600152?", preferredStyle: UIAlertController.Style.alert)
+        
+        alert.addAction(UIAlertAction(title: "Call", style: .default, handler: { (action: UIAlertAction!) in
+            print("Handle call logic here")
+            
+            let busPhone = 07951600152
+            if let url = URL(string: "tel://\(busPhone)"), UIApplication.shared.canOpenURL(url) {
+                if #available(iOS 10, *) {
+                    UIApplication.shared.open(url)
+                } else {
+                    UIApplication.shared.openURL(url)
+                }
+            }
+            
+        }))
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action: UIAlertAction!) in
+            print("Handle Cancel Logic here")
+        }))
+        
+        present(alert, animated: true, completion: nil)
     }
 }
